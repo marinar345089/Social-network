@@ -48,6 +48,14 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route
+          path="*"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
       <Footer />
     </Theme>
